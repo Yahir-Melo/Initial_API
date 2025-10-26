@@ -1,11 +1,11 @@
 
 import { Router } from 'express';
-import { InventoryRoutes } from './presentation/routes/inventory_routes.js';
+import { ResourceRoutes } from './presentation/routes/resource_routes.js';
 
 export class AppRoutes {
   static get routes(): Router {
     const router = Router();
-    router.use('/api/inventory', InventoryRoutes.routes);
+    router.use('/api/resource', ResourceRoutes.routes);
     return router;
   }
 }

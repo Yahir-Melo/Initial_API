@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { InventoryController } from "../controllers/inventory_controller.js";
+import { ResourceController } from "../controllers/resource_controller.js";
 import { AuthMiddleware } from "../middlewares/auth.middleware.js";
 
-export class InventoryRoutes{
+export class ResourceRoutes{
 
    static get routes(): Router{
  
     const router= Router();
 
-     const controller=new InventoryController()
+     const controller=new ResourceController()
      router.post('/profile',AuthMiddleware.validateJWT,controller.profile,);
 
      return router;

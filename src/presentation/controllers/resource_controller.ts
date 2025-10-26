@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
 
-export class InventoryController {
+export class ResourceController {
 
     profile(req: Request, res: Response) {
         // Envía una respuesta con estado 200 (OK) y un cuerpo JSON
